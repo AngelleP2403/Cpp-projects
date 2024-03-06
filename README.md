@@ -1,2 +1,2 @@
-# Cpp-projects
-Concise C++ projects on different skills and subjects
+# Portfolio
+Concise C++, Python, Java and Scheme projects on different skills and subjects
