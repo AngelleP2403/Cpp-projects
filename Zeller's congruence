@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+void Day(int zeller);
+int zeller(int year, int month, int day);
+
+int main()
+{
+    int year;
+    cout << "Enter year:(e.g.2015):";
+    cin >> year;
+    int month;
+    cout << "Enter month(1-12):";
+    cin >> month;
+    int day;
+    cout << "Enter the day of the month(1-31):";
+    cin >>day;
+
+    Day(zeller(year,month,day)); //calling the day function
+    return 0;
+}
+
+void Day(int zeller){//state the day of the week
+    if (zeller == 0)cout <<"The day is Sunday";
+    else if (zeller == 1)cout << "The day is Monday";
+    else if (zeller == 2)cout <<"The day is Tuesday";
+    else if (zeller == 3)cout <<"The day is Wednesday";
+    else if (zeller == 4)cout <<"The day is Thursday";
+    else if (zeller == 5)cout <<"The day is Friday";
+    else if (zeller == 6)cout <<"The day is Saturday";
+    }
+
+
+int zeller(int year, int month, int day) {//function to calculate the date
+    int a = (14 - month) / 12;
+    int y = year - a;
+    int m = month + 12 * a - 2;
+
+    int h = (day + y + y / 4 - y / 100 + y / 400 + (31 * m) / 12) % 7; //zeller's congruence
+
+    }
