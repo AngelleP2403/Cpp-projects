@@ -1,2 +1,2 @@
 # Portfolio
-Concise C++, Python, Java and Scheme projects on different skills and subjects
+Concise coding projects on different skills and subjects
